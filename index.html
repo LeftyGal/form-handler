@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>almost sakura time</title>
+    
+<style>
+               
+body {
+    background: url(/IMG_5762.JPG) center no-repeat, url(img_4994.jpg) repeat;
+    background-position:  300px 20px, 100px 100px;
+    background-size:50vmax;
+    width: 100%;   
+}  
+
+h1 {
+    color: white;
+    text-align: center;
+    font: white;
+    font-size: 5em;
+    position: fixed;
+    left: 0rem;
+    right: inherit;
+    top: 0rem;
+    width: 100%;
+    background-color: pink;
+    border: solid white;
+      }
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+fieldset {
+        position: fixed;
+        left: 0rem;
+        bottom: 0rem;
+        width: 100%;
+        background-color: pink;
+        color: black;
+        text-align: center;
+        border: solid white;
+      }
+      
+</style>
+    
+    
+<fieldset>
+  
+  <legend> Contact Details</legend>
+
+  <form name="custInfo" onsubmit="myFunction()">
+  Enter Name: <input type="text" name="name">
+  Enter City: <input type="text" name="city">
+  Enter email addrees: <input type="email" name="email">
+  <input type="submit" value="Submit">
+    </form>
+  
+    </fieldset>
+
+    <script>
+  
+  function myFunction(){
+  event.preventDefault()
+  console.log("form submitted")
+ 
+  var theName = document.custInfo.name.value
+  var city = document.custInfo.city.value
+  var email = document.custInfo.email.value
+  console.log(theName + city + email )
+  console.log("Thanks for signing up for our mailing list," + email );
+  
+    alert("Thanks for signing up for our mailing list," + email );
+  }
+    </script>
+  
+  </head>
+  
+ 
+
+  <body>
+ 
+  <h1> Meow!! Sign up for Kitty's News!! </h1>
+  
+  <audio controls>
+  
+  <source src="/NOZUE_NO_UTAGE.mp3" type="audio/mp3">
+
+    </audio>
+     
+</body>
+</html>
